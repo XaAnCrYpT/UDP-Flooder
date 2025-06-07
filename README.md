@@ -1,41 +1,67 @@
-# UDP-Flooder
-UDP Flooder written in python
+☠️ ULTIMATE NETWORK KILLER v3.0
+NetworkKiller v3.0 is a high-performance network packet generation and traffic analysis tool built with Python. Designed with a modern GUI and powerful backend engine, it provides users with real-time control and visibility over simulated traffic flows. Ideal for network diagnostics, educational demonstrations, and controlled stress testing in lab environments.
 
-🛠️ NetworkKiller v3.0 – High-Throughput Packet Generation and Analysis GUI Tool
-Overview:
-NetworkKiller v3.0 is a Python-based GUI application designed for generating and analyzing high volumes of network packets using both raw sockets and Scapy. The tool supports two primary modes—UDP flood and SYN flood—intended for stress testing and network simulation in controlled or research environments.
+🔧 Key Features
+🎯 Dual Attack Modes
 
-Key Features:
+UDP Flood: Sends rapid datagrams for connectionless testing.
 
-Real IP Spoofing using Scapy for crafting custom IP headers.
+SYN Flood: Crafts raw TCP packets to simulate half-open connections.
 
-Multiple Attack Modes: Selectable between UDP and SYN-based packet generation.
+🧠 Smart Target Resolver
+Automatically detects and resolves domain names to IP addresses for ease of use.
 
-Thread Optimization: Supports launching up to 2000 concurrent threads for load simulation.
+⚡ Thread-Optimized Engine
+Launches up to 2000+ concurrent threads to simulate high-throughput environments.
 
-Dynamic Target Resolution: Automatically resolves domain names to IPs.
+🎭 Real IP Spoofing (Scapy-based)
+Crafts packets with randomized source IPs for advanced simulation and spoofing demonstrations.
 
-Live Packet Analytics: Real-time stats including total packets sent, failed packets, and packets per second (PPS).
+📈 Live Analytics Dashboard
+Displays real-time statistics including:
 
-Modern GUI Interface: Built with Tkinter and styled with a dark "military" aesthetic.
+Total packets sent
 
-Logging Console: Embedded text log for packet operations and status updates.
+Failed packet count
 
-Technical Highlights:
+Packets-per-second (PPS)
 
-Written in Python using tkinter for GUI, socket for standard UDP sending, and scapy for raw packet crafting.
+💻 Military-Inspired Dark UI
+Stylish Tkinter interface with intuitive controls and visual feedback.
 
-Utilizes multithreading to maximize throughput.
+🛠️ Technical Overview
+Language: Python 3
 
-Allows customizable settings for target, port, thread count, and packet size.
+Libraries Used:
 
-Spoofed packets are constructed using randomized IPs for the source address field (when enabled).
+scapy for raw packet crafting
 
-Use Cases (when used responsibly):
+socket for basic networking
 
-Network performance/load testing in a controlled lab environment.
+tkinter for the GUI
 
-Packet-level simulation for research or academic purposes.
+threading for concurrent execution
 
-Educational tool for learning about packet crafting and network traffic behaviors.
+Customization Options:
+
+Target IP/Domain & Port
+
+Packet Size (default: 1024 bytes)
+
+Attack Mode: UDP or SYN
+
+Thread Count (up to 2000)
+
+GUI Components:
+
+Input fields for all parameters
+
+Dropdown menu for attack mode
+
+Real-time logging console
+
+Start/Stop control with status indicators
+
+⚠️ Important Note
+This tool is intended only for educational, testing, or research purposes within authorized and controlled environments. Unauthorized use against networks or systems you do not own or have explicit permission to test may violate laws and ethical guidelines.
 
